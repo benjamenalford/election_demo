@@ -33,3 +33,8 @@ with open(file_to_load) as election_data:
 print(f'Total Votes: {total_votes}')
 print(f'We had {len(candidates)} candidates')
 print(candidate_votes)
+
+for candidate in candidates:
+    print(candidate)
+    print(f'Votes {round((candidate_votes[candidate] / total_votes)*100)}%')
+
